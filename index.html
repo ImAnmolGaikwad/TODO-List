@@ -13,7 +13,8 @@
             border-radius: 30px;
             box-shadow: 0px 0px 10px grey;
             padding: 30px;
-            background-color: rgb(43, 232, 188);
+            background-color:white;
+            border: 1px solid blue;
         }
         .container
         {
@@ -22,10 +23,13 @@
             left: 0px;
             height: 100vh;
             width: 100%;
-            background-color: grey;
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        h1{
+            color:white;
         }
         .checked
         {
@@ -39,6 +43,15 @@
             position: absolute;
             right: 0px;
         }
+        input{
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button{
+            padding: 5px;
+            border-radius:15px;
+        }
+        
     </style>
 </head>
 <body>
@@ -46,7 +59,7 @@
         <div class="todo">
             <h1>TO-DO LIST</h1>
             <input type="text" id="task" placeholder="Add a New Task">
-            <button onclick="addTask()">ADD</button>
+            <button onclick="addTask()">+</button>
             <ul id="taskList">
                 <!-- <li class="checked">TAsk 1 <span>X</span></li> -->
             </ul>
